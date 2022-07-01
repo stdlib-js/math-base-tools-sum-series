@@ -24,30 +24,14 @@ limitations under the License.
 
 > Compute the sum of an [infinite series][infinite-series].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-tools-sum-series
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var sumSeries = require( '@stdlib/math-base-tools-sum-series' );
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
 ```
 
 #### sumSeries( generator\[, options ] )
@@ -59,7 +43,7 @@ Using an ES6 [Generator object][es6-generator]:
 <!-- eslint-disable no-restricted-syntax -->
 
 ```javascript
-var pow = require( '@stdlib/math-base-special-pow' );
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
 var gen = geometricSeriesGenerator( 0.9 );
 var out = sumSeries( gen );
 // returns 10
@@ -76,7 +60,7 @@ function* geometricSeriesGenerator( x ) {
 Alternatively, one can use a closure to achieve the same goal:
 
 ```javascript
-var pow = require( '@stdlib/math-base-special-pow' );
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
 var gen = geometricSeriesClosure( 0.9 );
 var out = sumSeries( gen );
 // returns 10
@@ -101,7 +85,7 @@ The `function` accepts the following `options`:
 By default, the initial value of the sum is `0`. To choose a different one, use the `initialValue` option.
 
 ```javascript
-var pow = require( '@stdlib/math-base-special-pow' );
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
 
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'initialValue': 1
@@ -122,7 +106,7 @@ function geometricSeriesClosure( x ) {
 To change the maximum number of terms to be summed, set the `maxTerms` option.
 
 ```javascript
-var pow = require( '@stdlib/math-base-special-pow' );
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
 
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'maxTerms': 10
@@ -143,7 +127,7 @@ function geometricSeriesClosure( x ) {
 The default tolerance of `2.22e-16` used to assess convergence can be changed via the `tolerance` option.
 
 ```javascript
-var pow = require( '@stdlib/math-base-special-pow' );
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
 
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'tolerance': 1e-3
@@ -174,8 +158,8 @@ function geometricSeriesClosure( x ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var log1p = require( '@stdlib/math-base-special-log1p' );
-var sumSeries = require( '@stdlib/math-base-tools-sum-series' );
+import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
 
 function* log1pSeries( x ) {
     var mMult = -x;
@@ -213,7 +197,7 @@ console.log( 'log1p(0.5) evaluated via infinite series expansion: %d', sumSeries
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
