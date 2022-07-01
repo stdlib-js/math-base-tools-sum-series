@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-generator-support@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@esm/index.mjs";var r=t,n=s;var i=function(e,t){var s,i,a,o,l;if(l={},arguments.length>1&&(l=t),s=l.tolerance||n,a=l.maxTerms||1e6,o=l.initialValue||0,!0===("function"==typeof e.next)){for(i of e)if(r(s*(o+=i))>=r(i)||0==--a)break}else do{o+=i=e()}while(r(s*o)<r(i)&&--a);return o},a=t,o=s;var l=function(e,t){var s,r,n,i,l;l={},arguments.length>1&&(l=t),s=l.tolerance||o,n=l.maxTerms||1e6,i=l.initialValue||0;do{i+=r=e()}while(a(s*i)<a(r)&&--n);return i},m=i,d=l,f=e()?m:d;export{f as default};
-//# sourceMappingURL=index.mjs.map
