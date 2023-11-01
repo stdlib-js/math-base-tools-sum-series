@@ -37,14 +37,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-generator-support": "^0.1.0",
+    "@stdlib/assert-has-generator-support": "^0.1.1",
     "@stdlib/constants-float64-eps": "^0.1.1",
-    "@stdlib/math-base-special-abs": "^0.1.0",
+    "@stdlib/math-base-special-abs": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/math-base-special-log1p": "^0.1.0",
+    "@stdlib/math-base-special-log1p": "^0.1.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/utils-eval": "^0.1.1",
     "proxyquire": "^2.0.0",
