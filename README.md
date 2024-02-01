@@ -35,14 +35,32 @@ limitations under the License.
 
 > Compute the sum of an [infinite series][infinite-series].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-tools-sum-series
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@esm/index.mjs';
+var sumSeries = require( '@stdlib/math-base-tools-sum-series' );
 ```
 
 #### sumSeries( generator\[, options ] )
@@ -54,7 +72,7 @@ Using an ES6 [Generator object][es6-generator]:
 <!-- eslint-disable no-restricted-syntax, node/no-unsupported-features/es-syntax -->
 
 ```javascript
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
+var pow = require( '@stdlib/math-base-special-pow' );
 var gen = geometricSeriesGenerator( 0.9 );
 var out = sumSeries( gen );
 // returns 10
@@ -71,7 +89,7 @@ function* geometricSeriesGenerator( x ) {
 Alternatively, one can use a closure to achieve the same goal:
 
 ```javascript
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
+var pow = require( '@stdlib/math-base-special-pow' );
 var gen = geometricSeriesClosure( 0.9 );
 var out = sumSeries( gen );
 // returns 10
@@ -96,7 +114,7 @@ The `function` accepts the following `options`:
 By default, the initial value of the sum is `0`. To choose a different one, use the `initialValue` option.
 
 ```javascript
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
+var pow = require( '@stdlib/math-base-special-pow' );
 
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'initialValue': 1
@@ -117,7 +135,7 @@ function geometricSeriesClosure( x ) {
 To change the maximum number of terms to be summed, set the `maxTerms` option.
 
 ```javascript
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
+var pow = require( '@stdlib/math-base-special-pow' );
 
 // Note: infinite sum is 2
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
@@ -139,7 +157,7 @@ function geometricSeriesClosure( x ) {
 The default tolerance of `2.22e-16` used to assess convergence can be changed via the `tolerance` option.
 
 ```javascript
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
+var pow = require( '@stdlib/math-base-special-pow' );
 
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'tolerance': 1e-3
@@ -169,14 +187,9 @@ function geometricSeriesClosure( x ) {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@esm/index.mjs';
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@esm/index.mjs';
+```javascript
+var log1p = require( '@stdlib/math-base-special-log1p' );
+var sumSeries = require( '@stdlib/math-base-tools-sum-series' );
 
 function* log1pSeries( x ) {
     var mMult = -x;
@@ -191,10 +204,6 @@ function* log1pSeries( x ) {
 
 console.log( 'log1p(0.5) evaluated via math-log1p module: %d', log1p( 0.5 ) );
 console.log( 'log1p(0.5) evaluated via infinite series expansion: %d', sumSeries( log1pSeries( 0.5 ) ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -218,7 +227,7 @@ console.log( 'log1p(0.5) evaluated via infinite series expansion: %d', sumSeries
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -272,8 +281,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/math-base-tools-sum-series/tree/deno
+[deno-readme]: https://github.com/stdlib-js/math-base-tools-sum-series/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/math-base-tools-sum-series/tree/umd
+[umd-readme]: https://github.com/stdlib-js/math-base-tools-sum-series/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/math-base-tools-sum-series/tree/esm
+[esm-readme]: https://github.com/stdlib-js/math-base-tools-sum-series/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/math-base-tools-sum-series/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-tools-sum-series/main/LICENSE
