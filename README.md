@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-tools-sum-series/tags). For example,
+
+```javascript
 import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.0-deno/mod.js';
 ```
 
@@ -171,7 +176,7 @@ function geometricSeriesClosure( x ) {
 
 ```javascript
 import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.0-deno/mod.js';
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
 
 function* log1pSeries( x ) {
     var mMult = -x;
