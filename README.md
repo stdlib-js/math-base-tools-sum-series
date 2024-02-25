@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-tools-sum-series/tags). For example,
+
+```javascript
 import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.1-esm/index.mjs';
 ```
 
@@ -176,7 +181,7 @@ function geometricSeriesClosure( x ) {
 <script type="module">
 
 import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@esm/index.mjs';
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.1-esm/index.mjs';
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@esm/index.mjs';
 
 function* log1pSeries( x ) {
     var mMult = -x;
