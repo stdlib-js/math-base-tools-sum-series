@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.2-deno/mod.js';
 ```
 
 #### sumSeries( generator\[, options ] )
@@ -171,7 +171,7 @@ function geometricSeriesClosure( x ) {
 
 ```javascript
 import log1p from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-log1p@deno/mod.js';
-import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@deno/mod.js';
+import sumSeries from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-sum-series@v0.2.2-deno/mod.js';
 
 function* log1pSeries( x ) {
     var mMult = -x;
