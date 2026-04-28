@@ -69,7 +69,7 @@ Computes the sum of the series given by the supplied `generator` argument. `gene
 
 Using an ES6 [Generator object][es6-generator]:
 
-<!-- eslint-disable no-restricted-syntax, node/no-unsupported-features/es-syntax -->
+<!-- eslint-disable no-restricted-syntax, n/no-unsupported-features/es-syntax -->
 
 ```javascript
 var pow = require( '@stdlib/math-base-special-pow' );
@@ -183,7 +183,7 @@ function geometricSeriesClosure( x ) {
 
 ## Examples
 
-<!-- eslint-disable no-restricted-syntax, node/no-unsupported-features/es-syntax -->
+<!-- eslint-disable no-restricted-syntax, n/no-unsupported-features/es-syntax -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -257,8 +257,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-tools-sum-series.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-tools-sum-series
 
-[test-image]: https://github.com/stdlib-js/math-base-tools-sum-series/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/math-base-tools-sum-series/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/math-base-tools-sum-series/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-base-tools-sum-series/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-tools-sum-series/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-tools-sum-series?branch=main
