@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-23)
+## Unreleased (2026-10-24)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`cc3652e`](https://github.com/stdlib-js/stdlib/commit/cc3652e1c805138e4355ae5c2195b846d1ba013c) - **test:** migrate `math/base/tools/sum-series` to ULP-based assertions [(#16218)](https://github.com/stdlib-js/stdlib/pull/16218) _(by Athan Reines)_
 -   [`df5f5ec`](https://github.com/stdlib-js/stdlib/commit/df5f5ec0b7f6e7923b39f7355adbfca29b2c6e08) - **docs:** add empty intro and notes section wrappers [(#15450)](https://github.com/stdlib-js/stdlib/pull/15450) _(by Philipp Burckhardt)_
 -   [`d429b7b`](https://github.com/stdlib-js/stdlib/commit/d429b7b10f275b904b9346850252b91f8219ea75) - **chore:** fix JavaScript lint errors  [(#13176)](https://github.com/stdlib-js/stdlib/pull/13176) _(by Akanksha Kumari)_
 -   [`d689d2d`](https://github.com/stdlib-js/stdlib/commit/d689d2dcba1570eedbbe3b7689dcbe1921ba11eb) - **chore:** propagate `node/` -> `n/` eslint plugin prefix update across README directives [(#11826)](https://github.com/stdlib-js/stdlib/pull/11826) _(by Philipp Burckhardt)_
@@ -38,9 +39,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Akanksha Kumari
+-   Athan Reines
 -   Philipp Burckhardt
 
 </section>
